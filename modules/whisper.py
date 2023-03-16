@@ -31,4 +31,4 @@ def call(mp3_filepath, id, title):
     f.write(fmt.format(jsonData["text"]))
     f.close()
 
-    print(f"created title:{title} id:{id}")
+    print(f"created {title}")
