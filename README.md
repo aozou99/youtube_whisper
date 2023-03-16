@@ -27,6 +27,11 @@ $ cp .env.example .env
 ### 注意
 30分以上の動画は無料枠を超えてしまうので、課金してください。
 
+### gitの変更対象外に設定
+```
+git update-index --assume-unchanged youtube.list
+```
+
 ## ツールを実行
 実行すると`output`ディレクトリに結果が出力されます。
 ```python
