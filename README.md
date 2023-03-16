@@ -8,8 +8,6 @@ Apple M1
 Python 3.9.7
 ```
 ## Install
-M1 Macだとpython-dotenvでエラーが出るかも。  
-自分はanaconda経由でインストールできました。
 ```
 $ python -m pip install python-dotenv yt-dlp
 ```
