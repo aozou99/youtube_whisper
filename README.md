@@ -11,8 +11,7 @@ Python 3.9.7
 M1 Macだとpython-dotenvでエラーが出るかも。  
 自分はanaconda経由でインストールできました。
 ```
-$ pip install python-dotenv 
-$ pip install yt-dlp
+$ python -m pip install python-dotenv yt-dlp
 ```
 ## API Keyの取得
 whisperのAPI Keyを取得してください。  
