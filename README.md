@@ -34,9 +34,10 @@ $ cp .env.example .env
 実行すると`output`ディレクトリに結果が出力されます。
 ```python
 $ python main.py
-$ tree output
+$ tree -a output
   output
   └── ucn4jAPWBdQ
+      ├── .Must Know Javascript Interview Questions
       ├── audio.mp3
       ├── audio_text.txt
       └── meta.json
