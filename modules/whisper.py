@@ -1,6 +1,5 @@
 import requests
 import os
-import modules.format as fmt
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -28,7 +27,7 @@ def call(mp3_filepath, id, title):
 
     jsonData = response.json()
     f = open(f'./output/{id}/audio_text.txt', 'w')
-    f.write(fmt.format(jsonData["text"]))
+    f.write(jsonData["text"])
     f.close()
 
     print(f"created {title}")
