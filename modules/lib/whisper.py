@@ -17,7 +17,7 @@ data = {
 }
 
 
-def call(mp3_filepath, id, title):
+def call(mp3_filepath):
     response = requests.post(
         url,
         headers=headers,

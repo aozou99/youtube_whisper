@@ -11,8 +11,7 @@ def _task(url):
 
     meta = ydl.download(url)
 
-    res = whisper.call(
-        path.save_path(meta['id'], 'audio.mp3'), meta['id'], meta['title'])
+    res = whisper.call(path.save_path(meta['id'], 'audio.mp3'))
 
     path.save_file(meta['id'], 'audio_text.txt',
                    fmt.text_readable(res['text']))
