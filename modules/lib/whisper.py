@@ -25,9 +25,4 @@ def call(mp3_filepath, id, title):
         data=data
     )
 
-    jsonData = response.json()
-    f = open(f'./output/{id}/audio_text.txt', 'w')
-    f.write(jsonData["text"])
-    f.close()
-
-    print(f"created {title}")
+    return response.json()

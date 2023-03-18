@@ -9,14 +9,17 @@ Python 3.9.7
 ```
 ## Install
 ```
-$ python -m pip install python-dotenv yt-dlp
+$ python -m pip install python-dotenv yt-dlp openai
 ```
 ## API Keyの取得
 whisperのAPI Keyを取得してください。  
 https://whisperapi.com/
 
+openaiのAPI Keyを取得してください。
+https://platform.openai.com/account/api-keys
+
 ## API Keyを環境変数に設定
-.envを作成して、WHISPER_API_KEYに設定してください。
+.envを作成して、各環境変数に取得したAPI Keyを設定してください。
 ```
 $ cp .env.example .env
 ```
@@ -42,5 +45,6 @@ $ tree -a output
       ├── .Must Know Javascript Interview Questions
       ├── audio.mp3
       ├── audio_text.txt
-      └── meta.json
+      ├── meta.json
+      └── summary.txt
 ```

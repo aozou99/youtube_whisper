@@ -22,7 +22,7 @@ def download(url):
         "id", "title", "description", "webpage_url", "duration_string"]}
     f = open(f'./output/{meta["id"]}/meta.json', 'w')
     json.dump(filtered_meta, f, ensure_ascii=False, indent=4,
-              sort_keys=True, separators=(',', ': '))
+              sort_keys=False, separators=(',', ': '))
     f.close()
 
     # タイトルだけの空ファイル
