@@ -15,7 +15,7 @@ $ python -m pip install python-dotenv yt-dlp openai
 whisperのAPI Keyを取得してください。  
 https://whisperapi.com/
 
-openaiのAPI Keyを取得してください。
+openaiのAPI Keyを取得してください。  
 https://platform.openai.com/account/api-keys
 
 ## API Keyを環境変数に設定
@@ -28,7 +28,8 @@ $ cp .env.example .env
 文字起こししたい動画URLを`youtube.list`に記載してください。  
 改行で複数指定もできます。
 ### 注意
-30分以上の動画は無料枠を超えてしまうので、課金してください。
+- 30分以上の動画はwhisperの無料枠を超えてしまうので、課金してください。
+- 要約の出力を行うためにopenapiを利用していますが、入力可能な文字数制限があるため、文字起こしの結果が大きい場合はsummary.txtは出力されません。
 
 ### gitの変更対象外に設定
 ```
