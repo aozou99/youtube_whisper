@@ -42,10 +42,10 @@ git update-index --assume-unchanged youtube.list
 $ python main.py
 $ tree -a output
   output
-  └── ucn4jAPWBdQ
-      ├── .Must Know Javascript Interview Questions
-      ├── audio.mp3
-      ├── audio_text.txt
-      ├── meta.json
-      └── summary.txt
+  └── ucn4jAPWBdQ                                   # 動画のID
+      ├── .Must Know Javascript Interview Questions # 動画のタイトル
+      ├── audio.mp3                                 # 音声
+      ├── audio_text.txt                            # 音声から変換されたテキスト
+      ├── meta.json                                 # 動画のメタ情報
+      └── summary.txt                               # 内容の概要
 ```
